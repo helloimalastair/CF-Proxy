@@ -1,0 +1,24 @@
+name = "worker"
+main = "./src/index.mts"
+compatibility_date = "2023-09-04"
+
+kv_namespaces = [
+  { binding = "BRAND",  id = "9383fd8b40d84bc3b13fd9d86775a7ce" },
+  { binding = "FEED",   id = "12f7cf5bbc204543a59fd9cb535e59b7" },
+  { binding = "CONFIG", id = "30a6f338287d45f4a3507904091c4e35" },
+  { binding = "POSTS",  id = "246bf41a4fcd456ba08043ca795c4819" },
+  { binding = "SLUGS",  id = "610ce659bf6f4efd877744a6d81f78d2" }
+]
+
+durable_objects.bindings = [
+  { name = "USER", class_name = "User" }
+]
+
+[[migrations]]
+tag = "v2"
+new_classes = ["User"]
+
+
+#account_id = "e909090c243c668f1acf40bdeefbe04d"
+#accountroute = ""
+#zone_id = "clubcarrot.com"

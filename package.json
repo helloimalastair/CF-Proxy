@@ -1,0 +1,18 @@
+{
+  "name": "posts",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.8.0"
+  },
+  "dependencies": {
+    "@cloudflare/itty-router-openapi": "^1.0.3",
+    "itty-durable": "^2.1.0",
+    "itty-router": "^4.0.23",
+    "itty-router-extras": "^0.4.5"
+  }
+}
