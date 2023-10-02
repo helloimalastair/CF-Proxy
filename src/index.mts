@@ -8,9 +8,8 @@ import FeedsFetch from "./paths/KeyValue/FeedsFetch";
 import BrandFetch from "./paths/KeyValue/BrandFetch";
 
 import UserLookup from "./paths/DOGetters/UserLookup";
-import {User} from "./paths/Durables/User";
 
-export {User} from "./paths/Durables/User"
+export { default as User } from "./paths/Durables/User";
 
 
 const router = OpenAPIRouter()
